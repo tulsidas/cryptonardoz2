@@ -451,6 +451,7 @@
 				<section>
 					<h2>Caso práctico #2</h2>
 					<p>Ocultar datos en una URL</p>
+					<br/>
 					<p class="fragment"><code>www.pepe.com/view?id=<span class="yellow">123</span></code></p>
 					<p class="fragment"><strong class="red">no reemplaza a control de accesos en el server</strong></p>
 					<p class="fragment">
@@ -470,6 +471,21 @@
 						algoritmo simétrico
 						&rarr;
 						<code>view?id=<span class="yellow"><em>E(123)</em></span></code>
+					</p>
+				</section>
+
+				<section>
+					<h2>Caso práctico #3</h2>
+					<p>password manager fatto in casa</p>
+					<br/>
+					<p class="fragment">memorizo clave fácil: <code>pirulo</code></p>
+					<p class="fragment"><code>clave = h(pirulo || dominio)</code></p>
+					<p class="fragment"><strong>h</strong> determina el tamaño de la clave</p>
+					<p class="fragment">
+						<code>echo -n &lt;texto&gt; | (md5sum|sha1sum|sha256sum)</code>
+					</p>
+					<p class="fragment">
+						<code>md5(pirulo+amazon.com)= 00edb49595b6f1c8cf35375c861ea6c3</code>
 					</p>
 				</section>
 
