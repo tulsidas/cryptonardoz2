@@ -260,16 +260,7 @@
 
 				<section>
 					<h2>Diffie-Hellman (1976)</h2>
-					<p class="fragment"><em>asumamos <code>+</code> es fácil, <code>-</code> es imposible</em></p>
-					<p class="fragment"><code>n=49</code> (de público conocimiento)</p>
-					<pre class="fragment">Alicia               Eva             Beto   </pre>
-					<pre class="fragment"> s=rnd()=17                      t=rnd()=23  </pre>
-					<pre class="fragment"> n+s=66                            n+t=72 </pre>
-					<pre class="fragment">      &rarr; n+s               &larr; n+t  </pre>
-					<pre class="fragment">  k=(n+t)+s=89                 k=(n+s)+t=89  </pre>
-					<pre class="fragment">              (n+s) & (n+t)                </pre>
-					<pre class="fragment">             (n+s+t) = ???               </pre>
-					<p class="fragment">¡Victoria!<br/> Alicia y Beto comparten <code>k=89</code> y Eva no lo sabe</p>
+					<img src="img/dh-paint.png" height="600" class="fragment" />
 				</section>
 
 				<section>
@@ -285,7 +276,7 @@
 				</section>
 
 				<section>
-					<h2>criptografía asimétrica (clave pública)</h2>
+					<h2>criptografía asimétrica</h2>
 					<h3 class="fragment"><code>(
 						<span class="green"> k<sub>pub</sub> </span>,
 						<span class="red"> k<sub>pr</sub> </span>
@@ -297,8 +288,9 @@
 				</section>
 
 				<section>
-					<h2>criptografía asimétrica (clave pública)</h2>
+					<h2>criptografía asimétrica</h2>
 					<p class="fragment">~1000x más lentos que algoritmos simétricos</p>
+					<p class="fragment">necesitan claves más largas</p>
 					<img class="fragment" src="img/pk-keys.png" />
 					<p>
 						<span class="fragment"><code class="yellow">RSA</code>: factorización de primos</span>
@@ -309,12 +301,12 @@
 				</section>
 
 				<section>
-					<h2>criptografía asimétrica (clave pública)</h2>
-					<p class="fragment"><br/><strong>Sistemas Híbridos</strong>: encriptación asimétrica <code>(RSA/ElGamal)</code> para intercambio de claves, simétrica <code>(AES)</code> para los mensajes</p>
+					<h2>criptografía asimétrica</h2>
+					<p class="fragment"><br/><strong>Sistemas Híbridos</strong><br/>encriptación asimétrica <code>(RSA/ElGamal)</code> para intercambio de claves, simétrica <code>(AES)</code> para los mensajes</p>
 				</section>
 
 				<section>
-					<h2>public key criptography</h2>
+					<h2>criptografía asimétrica</h2>
 					<h3><code>(
 						<span class="green"> k<sub>pub</sub> </span>,
 						<span class="red"> k<sub>pr</sub> </span>
