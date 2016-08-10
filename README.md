@@ -1,4 +1,4 @@
-# cryptoflisol16
-Charla de introducción a la criptografía en FLISoL CABA 2016
+# cryptonardoz reloaded
+Charla de introducción a la criptografía para los #nardoz - Agosto 2016
 
-http://tulsidas.github.io/cryptoflisol16/#/
+http://tulsidas.github.io/cryptonardoz2/#/
